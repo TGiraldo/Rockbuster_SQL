@@ -1,0 +1,11 @@
+Here is a SQL query that identifies the top 10 cities within the top 10 countries that I identified in the JOINS file
+This query uses JOIN and WHERE IN
+
+SELECT D.country, C.city, COUNT (customer_id) as customers 
+FROM customer A
+INNER JOIN address B. ON A.address_id = B.address_id
+INNER JOIN city C ON B.city_id = city_id
+INNER JOIN country D ON C.country_id = D.country_id
+WHERE D.country IN ('India', 'China', 'United States', 'Japan', 'Mexico', 'Turkey', 'Brazil')
+ORDER BY customers DESC, city ASC
+LIMIT 10 
