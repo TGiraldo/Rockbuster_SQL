@@ -27,3 +27,4 @@ The data was provided by Rockbuster in the Project Brief. The data set worked on
 - Store
 
 # Visualizations 
+See file 3.10 Presentation to Stakeholders for visualizations for this project
