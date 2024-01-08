@@ -6,3 +6,24 @@ The goal is to understand Rockbusters client purchase patterns and behaviors to 
 
 # Data
 The data was provided by Rockbuster in the Project Brief. The data set worked on contained the following information:
+
+## Fact_Table 
+- Payment
+- Rental
+
+## Dimension_Tables 
+- Actor
+- Address
+- Category
+- City
+- Country
+- Customer
+- Film
+- Film Actor
+- Film Category
+- Inventory
+- Language
+- Staff
+- Store
+
+# Visualizations 
