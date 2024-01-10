@@ -1,0 +1,21 @@
+Find the Top Genres for Each of the Top Cities
+
+WITH CityGenres AS (
+    SELECT
+        C.city AS ""city"",
+        G.name AS ""genre"",
+        COUNT(*) AS genre_count
+    FROM customer A
+    INNER JOIN address B ON A.address_id = B.address_id
+    INNER JOIN city C ON B.city_id = C.city_id
+    INNER JOIN rental R ON A.customer_id = R.customer_id
+    INNER JOIN inventory I ON R.inventory_id = I.inventory_id
+    INNER JOIN film F ON I.film_id = F.film_id
+    INNER JOIN film_category FC ON F.film_id = FC.film_id
+    INNER JOIN category G ON FC.category_id = G.category_id
+    WHERE C.city IN ('Aurora', 'Acua', 'Citrus Heights', 'Iwaki', 'Ambattur', 'Shanwei', 'So Leopoldo', 'Teboksary', 'Tianjin', 'Cianjur')
+    GROUP BY C.city, G.name
+)
+SELECT DISTINCT ON (""city"") ""city"", ""genre""
+FROM CityGenres
+ORDER BY ""city"", genre_count DESC;
