@@ -1,8 +1,5 @@
-Here is a SQL query with table joins:
+Find the top 10 countries in terms of customer numbers for a movie rental company
 
-I used this query to find the top 10 countries in terms of customer numbers for a movie rental company
-
-SELECT * FROM pg_catalog.pg_tables
 SELECT D.country,
         COUNT (customer_id) AS customers
 FROM Customer A 
