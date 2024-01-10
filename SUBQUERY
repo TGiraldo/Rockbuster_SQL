@@ -1,4 +1,3 @@
-Here is a SQL query using SUBQUERIES
 Find the average amount paid by the top 5 customers
 
 SELECT AVG (total_amount_paid)
