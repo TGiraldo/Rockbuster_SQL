@@ -1,6 +1,6 @@
 Here is a SQL query with a common table expression:
 
-I used this query to find the average dollar amount paid by the top 5 customers at a movie rental company 
+Find the average dollar amount paid by the top 5 customers at a movie rental company 
 
 WITH Top5Customers AS (
   SELECT A.customer_id,
