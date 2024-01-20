@@ -30,6 +30,6 @@ The data was provided by Rockbuster in the Project Brief. See file 3.10 Rockbust
 Query: This folder holds all the SQL queries for the Rockbuster project. Each file highlights a different function or business question.
 
 # Visualizations 
-See file 3.10 Presentation to Stakeholders for visualizations for this project
+See file 2.Presentation to Stakeholders for visualizations for this project
 
 
